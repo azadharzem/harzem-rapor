@@ -1,1 +1,51 @@
-<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=ana_panel.html"></head><body></body></html> 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Harzem Analiz</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0e1a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;color:#e2e8f0}
+.box{background:#111827;border:1px solid #1e293b;border-radius:16px;padding:40px;width:340px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.logo{font-size:28px;font-weight:800;letter-spacing:2px;background:linear-gradient(135deg,#f6c942,#e8b923);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px}
+.sub{font-size:11px;color:#64748b;margin-bottom:32px}
+.input-box{position:relative;margin-bottom:20px}
+input{width:100%;padding:14px 16px;background:#1e293b;border:1px solid #334155;border-radius:10px;color:#e2e8f0;font-size:16px;text-align:center;letter-spacing:8px;outline:none;transition:border 0.3s}
+input:focus{border-color:#f6c942}
+input::placeholder{letter-spacing:1px;font-size:13px;color:#475569}
+.btn{width:100%;padding:14px;background:linear-gradient(135deg,#f6c942,#e8b923);border:none;border-radius:10px;color:#0a0e1a;font-size:15px;font-weight:700;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(246,201,66,0.3)}
+.btn:active{transform:translateY(0)}
+.err{color:#ef4444;font-size:12px;margin-top:12px;display:none}
+.lock{font-size:40px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="lock">🔒</div>
+<div class="logo">HARZEM</div>
+<div class="sub">Analiz Paneli</div>
+<div class="input-box">
+<input type="password" id="pw" placeholder="Şifre" maxlength="10" autofocus>
+</div>
+<button class="btn" onclick="check()">Giriş</button>
+<div class="err" id="err">Şifre yanlış</div>
+</div>
+<script>
+function check(){
+var p=document.getElementById("pw").value;
+var h=0;for(var i=0;i<p.length;i++){h=((h<<5)-h)+p.charCodeAt(i);h=h&h;}
+if(h===1539200739){
+document.cookie="h_auth=ok;path=/;max-age=86400";
+window.location.href="ana_panel.html";
+}else{
+document.getElementById("err").style.display="block";
+document.getElementById("pw").value="";
+setTimeout(function(){document.getElementById("err").style.display="none";},2000);
+}
+}
+document.getElementById("pw").addEventListener("keypress",function(e){if(e.key==="Enter")check();});
+</script>
+</body>
+</html>
