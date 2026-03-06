@@ -44,12 +44,12 @@
   ⚡ CAN: 11 kişi ağırlamış ama 0 TL ciro — ödenmez/ikram?
 
 ─────────────────────
-📅 *HAFTA TOPLAMI*  (3. gün)
+📅 *HAFTA TOPLAMI*  (4. gün)
 ─────────────────────
-  Ciro: 446.055 ₺
-  Müşteri: 241 kişi
-  Kişi Başı: 1.851 ₺
-  Günlük Ort: 148.685 ₺
+  Ciro: 640.510 ₺
+  Müşteri: 326 kişi
+  Kişi Başı: 1.965 ₺
+  Günlük Ort: 160.128 ₺
 
 ━━━━━━━━━━━━━━━━━━━━
 _Harzem Analiz v7.0_

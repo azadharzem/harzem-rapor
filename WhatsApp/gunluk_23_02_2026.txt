@@ -44,12 +44,12 @@
   ⚡ Return oranı %21.0 — dikkat!
 
 ─────────────────────
-📅 *HAFTA TOPLAMI*  (1. gün)
+📅 *HAFTA TOPLAMI*  (2. gün)
 ─────────────────────
-  Ciro: 116.510 ₺
-  Müşteri: 63 kişi
-  Kişi Başı: 1.849 ₺
-  Günlük Ort: 116.510 ₺
+  Ciro: 310.965 ₺
+  Müşteri: 148 kişi
+  Kişi Başı: 2.101 ₺
+  Günlük Ort: 155.482 ₺
 
 ━━━━━━━━━━━━━━━━━━━━
 _Harzem Analiz v7.0_
